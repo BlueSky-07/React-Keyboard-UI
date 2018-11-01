@@ -1,0 +1,14 @@
+.Keyboard {
+  width: max-content;
+  margin: 2em auto;
+}
+
+.Keyboard .Keyboard-Row {
+  display: table;
+  width: 100%;
+}
+
+.Keyboard .Key.underline-mark .Key-Row-Area.left-top,
+.Keyboard .Key.underline-mark .Key-Row-Area.center {
+  text-decoration: underline;
+}

@@ -1,0 +1,119 @@
+.Key {
+  display: table-cell;
+  border: 1px solid #000;
+  font-family: sans-serif;
+}
+
+.Key * {
+  user-select: none;
+}
+
+.Key .display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.Key .Key-Row {
+  display: table-row;
+}
+
+.Key .Key-Row-Area {
+  display: table-cell;
+  width: 50%;
+  line-height: 0;
+  padding: 0 10%;
+}
+
+.Key .Key-Row-Area.float-left-top {
+  text-align: left;
+  vertical-align: top;
+}
+
+.Key .Key-Row-Area.float-left-center {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.Key .Key-Row-Area.float-left-bottom {
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.Key .Key-Row-Area.float-middle-top {
+  text-align: center;
+  vertical-align: top;
+}
+
+.Key .Key-Row-Area.float-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Key .Key-Row-Area.float-middle-bottom {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.Key .Key-Row-Area.float-right-top {
+  text-align: right;
+  vertical-align: top;
+}
+
+.Key .Key-Row-Area.float-right-center {
+  text-align: right;
+  vertical-align: middle;
+}
+
+.Key .Key-Row-Area.float-right-bottom {
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.Key .Key-Row-Area.left-top.color {
+  border: 1px dashed red;
+}
+
+.Key .Key-Row-Area.left-bottom.color {
+  border: 1px dashed green;
+}
+
+.Key .Key-Row-Area.center.color {
+  border: 1px dashed black;
+  padding: 5%;
+}
+
+.Key .Key-Row-Area.right-top.color {
+  border: 1px dashed orange;
+}
+
+.Key .Key-Row-Area.right-bottom.color {
+  border: 1px dashed purple;
+}
+
+@supports ((-moz-appearance:none) or (-ms-ime-align: auto)) {
+  /* Firefox height fix */
+  /* Edge wrong position fix */
+  .Key .Key-Row-Area-Line:first-child {
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .Key .Key-Row-Area-Line {
+    display: block;
+    line-height: 1;
+    height: 0;
+  }
+}
+
+@supports not ((-moz-appearance:none) or (-ms-ime-align: auto)) {
+  .Key .Key-Row-Area-Line {
+    display: block;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .Key .Key-Row-Area-Line:first-child {
+    margin: -20% 0 60% 0;
+  }
+}

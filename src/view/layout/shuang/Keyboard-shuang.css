@@ -1,0 +1,16 @@
+.Keyboard.shuang .Key.shuang .Key-Row-Area.left-top {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.Keyboard.shuang .Key.shuang .Key-Row-Area.left-bottom {
+  font-weight: bold;
+  color: blue;
+  vertical-align: middle;
+}
+
+.Keyboard.shuang .Key.shuang .Key-Row-Area.right-bottom {
+  font-size: smaller;
+  text-align: left;
+  padding: 0 5% 0 0;
+}
